@@ -89,8 +89,22 @@ To download the full original datasets use the following links:
 
 
 ### Data Preparation
+Download the files in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest) and place the '_resources_' folder in the root of the project.
 
-Once the data has been downloaded, to work effectively with the code base, the HMC and HarMeme dataset images must be placed as the following structure:
+<pre>
+project_base_path
+└─── <b>resources</b>
+  ...
+└─── src
+  | combiner.py
+  | datasets.py
+  | engine.py
+  ...
+
+...
+</pre>
+
+To work effectively with the code base, the HMC and HarMeme dataset images must be placed as the following structure:
 
 <pre>
 project_base_path
@@ -150,11 +164,11 @@ Here's a brief description of each file under the ```src/``` directory:
 * ```main.py```: main file
 
 
-### Pre-trained models
+### Pre-trained models and weights
 
-We provide the pre-trained checkpoint of our best models via [Google Drive](https://drive.google.com/drive/u/1/folders/1sZmNTNZqT5hfKASgSF4UungKgcPUzaNk).
+We provide the pre-trained checkpoint of our best models in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest).
 
-To use the checkpoints to reproduce our results, they must be placed as the following structure:
+To use the checkpoints to reproduce our results, they must be placed in the following structure:
 <pre>
 project_base_path
 └─── resources
@@ -207,7 +221,7 @@ chmod +x <filename>.sh
 ./<filename>.sh
 ```
 
-Disabling the ```--reproduce``` flag allows the training and evaluation of the model, whereas enabling it will use the
+Disabling the ```--reproduce``` flag in one of the ```<filename>.sh``` files allows the training and evaluation of the model, whereas enabling it will use the
 specified pre-trained checkpoint and evaluate the model on the test data only.
 
 We recommend using the ```run.sh``` file to run experiments with different argument values.
