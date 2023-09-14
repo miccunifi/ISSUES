@@ -56,7 +56,7 @@ found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/l
 1. Clone the repository
 
 ```sh
-git clone https://github.com/GiovanniBurbi/hateful-memes.git
+git clone https://github.com/miccunifi/ISSUES.git
 ```
 
 2. Install Python dependencies
