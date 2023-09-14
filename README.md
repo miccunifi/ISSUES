@@ -2,6 +2,8 @@
 
 ### Mapping Memes to Words for Multimodal Hateful Meme Classification
 
+[![GitHub Stars](https://img.shields.io/github/stars/miccunifi/ISSUES?style=social)](https://github.com/miccunifi/ISSUES)
+
 This is the **official repository** of the paper "*Mapp**I**ng Meme**S** to Word**S** for M**U**ltimodal Hateful M**E**me Cla**S**sification*" (**ISSUES**).
 
 ## Overview
@@ -186,24 +188,25 @@ specified pre-trained checkpoint and evaluate the model on the test data only.
 We recommend using the ```run.sh``` file to run experiments with different argument values.
 
 ## Arguments
-We briefly describe some arguments of the scripts.
+We describe the arguments of the scripts
+
 ### Experiments
-- ```dataset``` - the name of the dataset: [**hmc** or **harmeme**]
+- ```dataset``` - dataset name: [**hmc** or **harmeme**]
 - ```num_mapping_layers``` - number of projection layers to map CLIP features in a task-oriented latent space
 - ```num_pre_output_layers``` - number of MLP hidden layers for performing the final classification
-- ```max_epochs``` - maximum number of epochs for the experiment
-- ```lr``` - learning rate to use in the optimizer
-- ```batch_size``` - size of the batch
+- ```max_epochs``` - maximum number of epochs
+- ```lr``` - learning rate
+- ```batch_size``` - batch size
 - ```fast_process``` - flag to indicate whether to use pre-computed CLIP features as the input of the model instead of 
                         computing them during the training process
-- ```name``` - name of the model to use
-- ```pretrained_model``` - name of the checkpoint of a trained model in the 'pretrained_models' folder
+- ```name``` - name of the model
+- ```pretrained_model``` - name of the checkpoint of the pretrained model in the 'pretrained_models' folder
 - ```reproduce``` - flag to indicate whether to perform the training process followed by the evaluation phase (False) or directly evaluate a pre-trained model on the test data (True)
 
 ### General
 - ```map_dim``` - output dimension of the projected feature vectors
-- ```fusion``` - fusion method between the textual and visual modalities for some models: [**concat** or **align**]
-- ```pretrained_proj_weights``` - flag to indicate whether to use pre-trained projection weights for some models
+- ```fusion``` - fusion method between the textual and visual modalities (when applicable): [**concat** or **align**]
+- ```pretrained_proj_weights``` - flag to indicate whether to use pre-trained projection weights (when applicable)
 - ```freeze_proj_layers``` - flag to indicate whether to freeze the pre-trained weights
 
 
@@ -216,8 +219,7 @@ We briefly describe some arguments of the scripts.
 - ```text_inv_proj``` - flag to indicate whether to use CLIP textual encoder projection 
 - ```phi_inv_proj``` - flag to indicate whether to project the output of phi network
 - ```post_inv_proj``` - flag to indicate whether to project the CLIP textual encoder output features
-- ```enh_text``` - flag to indicate whether to use a simple prompt with only the pseudo word or enhanced it 
-by concatenating the memes' text
+- ```enh_text``` - flag to indicate whether to use a prompt with only the pseudo-word or concatenate the meme text
 - ```phi_freeze``` - flag to indicate whether to freeze the pre-trained phi network 
 
 
