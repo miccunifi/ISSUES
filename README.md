@@ -12,18 +12,15 @@ Multimodal image-text memes are prevalent on the internet, serving as a unique f
 
 ![](assets/architecture_issues.png "Architecture of the method")
 
-Overview of the proposed approach. We disentangle CLIP common embedding space via linear projections. We employ textual inversion to make the textual representation multimodal. We fuse the textual and visual features with a [Combiner](https://github.com/ABaldrati/CLIP4CirDemo) architecture. $E_{L}$ represents the CLIP embedding lookup layer. $\phi$ indicates the [SEARLE](https://github.com/miccunifi/SEARLE) textual inversion network.
+Overview of the proposed approach. We disentangle CLIP common embedding space via linear projections. We employ textual inversion to make the textual representation multimodal. We fuse the textual and visual features with a [Combiner](https://github.com/ABaldrati/CLIP4Cir) architecture. $E_{L}$ represents the CLIP embedding lookup layer. $\phi$ indicates the [SEARLE](https://github.com/miccunifi/SEARLE) textual inversion network.
 
-## Getting Started
+<details>
+<summary><h2>Getting Started</h2></summary>
 
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-We strongly recommend the use of the [**Anaconda**](https://www.anaconda.com/) package manager to avoid
-dependency/reproducibility problems.
-A conda installation guide for Linux systems can be
-found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+We recommend using the [**Anaconda**](https://www.anaconda.com/) package manager to avoid dependency/reproducibility
+problems.
+For Linux systems, you can find a conda installation
+guide [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html).
 
 ### Installation
 
@@ -38,32 +35,28 @@ git clone https://github.com/miccunifi/ISSUES.git
 Navigate to the root folder of the repository and use the command:
 ```sh
 conda config --add channels conda-forge
-conda create -n memes -y python=3.9.16
-conda activate memes
+conda create -n issues -y python=3.9.16
+conda activate issues
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 conda install --file requirements.txt
 pip install git+https://github.com/openai/CLIP.git
 ```
-
-Based on the CUDA version on your machine you may have to replace some package versions.
 
 3. Log in to your WandB account
 ```sh
 wandb login
 ```
 
-
 ## Datasets
-We do not hold rights on the original HMC and HarMeme datasets. 
+We do not hold rights to the original HMC and HarMeme datasets. 
 To download the full original datasets use the following links:
-
 
 - HMC **[[link](https://hatefulmemeschallenge.com/)]** - Contains **12.140** memes
 - HarMeme **[[link](https://github.com/di-dimitrov/mmf/tree/master/data/datasets/memes/defaults/images)]** - Contains **3.544** memes
 
 
 ### Data Preparation
-Download the files in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest) and place the '_resources_' folder in the root of the project.
+Download the files in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest) and place the `resources` folder in the root folder:
 
 <pre>
 project_base_path
@@ -78,7 +71,7 @@ project_base_path
 ...
 </pre>
 
-To work effectively with the code base, the HMC and HarMeme dataset images must be placed as the following structure:
+Ensure the HMC and HarMeme datasets match the following structure:
 
 <pre>
 project_base_path
@@ -126,17 +119,9 @@ project_base_path
 ...
 </pre>
 
+</details>
+
 ## Usage
-
-Here's a brief description of each file under the ```src/``` directory:
-
-* ```utils.py```: utils file
-* ```combiner.py```: Combiner model definition
-* ```textualInversion.py```: Textual Inversion model definition
-* ```datasets.py```: Dataset code and collator definition
-* ```engine.py```: Models definition for the multi-modal classification of hateful memes
-* ```main.py```: main file
-
 
 ### Pre-trained models and weights
 
