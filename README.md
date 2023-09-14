@@ -1,4 +1,8 @@
-# Multimodal Classification of Hateful Memes
+# ISSUES (ICCVW 2023)
+
+### Mapping Memes to Words for Multimodal Hateful Meme Classification
+
+This is the **official repository** of the paper "*Mapp**I**ng Meme**S** to Word**S** for M**U**ltimodal Hateful M**E**me Cla**S**sification*" (**ISSUES**).
 
 ## Overview
 
@@ -15,30 +19,6 @@ network to learn an expressive fusion function that models the interaction betwe
 modalities, we have outperformed all the existing baselines we considered. We performed extensive
 experiments on the HMC and HarMeme datasets, obtaining an AUROC of 85.51 and 92.83 respectively on the HMC test-unseen split
 and the HarMeme test set.
-
-[//]: # (## Table of Contents)
-
-[//]: # ()
-[//]: # (* [About the Project]&#40;#about-the-project&#41;)
-
-[//]: # (* [Getting Started]&#40;#getting-started&#41;)
-
-[//]: # (    * [Prerequisites]&#40;#prerequisites&#41;)
-
-[//]: # (    * [Installation]&#40;#installation&#41;)
-
-[//]: # (* [Usage]&#40;#usage&#41;)
-
-[//]: # (* [Authors]&#40;#authors&#41;)
-
-[//]: # (* [Acknowledgements]&#40;#acknowledgements&#41;)
-
-### Built With
-
-* [Python](https://www.python.org/)
-* [PyTorch](https://pytorch.org/)
-* [PyTorch Lightning](https://lightning.ai/pytorch-lightning)
-* [CLIP](https://github.com/openai/CLIP)
 
 ## Getting Started
 
@@ -265,7 +245,14 @@ by concatenating the memes' text
 ---------------------------------------------------
 ## Authors
 
-* Giovanni Burbi
+* [**Giovanni Burbi**](https://github.com/GiovanniBurbi)
 * [**Alberto Baldrati**](https://scholar.google.it/citations?hl=en&user=I1jaZecAAAAJ)
+* [**Lorenzo Agnolucci**](https://scholar.google.com/citations?user=hsCt4ZAAAAAJ&hl=en)
 * [**Marco Bertini**](https://scholar.google.it/citations?user=SBm9ZpYAAAAJ&hl=en)
+* [**Alberto Del Bimbo**](https://scholar.google.com/citations?user=bf2ZrFcAAAAJ&hl=en)
+
+## Acknowledgements
+
+This work was partially supported by the European Commission under European Horizon 2020 Programme, grant number
+101004545 - ReInHerit.
 
