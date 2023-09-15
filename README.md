@@ -233,6 +233,7 @@ We describe the arguments of the scripts
 * [**Alberto Del Bimbo**](https://scholar.google.com/citations?user=bf2ZrFcAAAAJ&hl=en)
 
 ## Acknowledgements
+Our code is based on **SEARLE** [![GitHub Stars](https://img.shields.io/github/stars/miccunifi/SEARLE?style=social)](https://github.com/miccunifi/SEARLE) and **Hate-CLIPper**[![GitHub Stars](https://img.shields.io/github/stars/gokulkarthik/hateclipper?style=social)](https://github.com/gokulkarthik/hateclipper).
 
 This work was partially supported by the European Commission under European Horizon 2020 Programme, grant number
 101004545 - ReInHerit.
