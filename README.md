@@ -156,7 +156,8 @@ project_base_path
 ### Reproduce the results and run experiments
 For running the following scripts in a decent amount of time, it is **heavily** recommended to use a CUDA-capable GPU.
 
-In the root folder of the repository you can find the scripts to reproduce our results or train from scratch our models.
+We provide the scripts for replicating our proposed model both with and without the Textual Inversion Network.
+These scripts are crucial for running the code with the necessary parameters to replicate our model's outcomes on both datasets.
 <pre>
 project_base_path
 └─── resources
@@ -182,7 +183,7 @@ chmod +x <filename>.sh
 ./<filename>.sh
 ```
 
-Disabling the ```--reproduce``` flag in one of the ```<filename>.sh``` files allows the training and evaluation of the model, whereas enabling it will use the
+Disabling the ```--reproduce``` flag in one of the ```<filename>.sh``` files allows the training from scratch and evaluation of the model, whereas enabling it will use the
 specified pre-trained checkpoint and evaluate the model on the test data only.
 
 We recommend using the ```run.sh``` file to run experiments with different argument values.
