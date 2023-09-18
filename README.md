@@ -183,6 +183,11 @@ chmod +x <filename>.sh
 ./<filename>.sh
 ```
 
+- ```<filename> = run_harmeme_combiner``` lets you run the model without the Text Inversion Network on the HarMeme dataset 
+- ```<filename> = run_harmeme_text-inv-comb``` lets you run our best model with the Iext Inversion Network on the HarMeme dataset
+- ```<filename> = run_hmc_combiner``` lets you run the model without the Text Inversion Network on the HMC dataset
+- ```<filename> = run_text-inv-comb``` lets you run the best model with the Text Inversion Network on the HMC dataset
+
 Disabling the ```--reproduce``` flag in one of the ```<filename>.sh``` files allows the training from scratch and evaluation of the model, whereas enabling it will use the
 specified pre-trained checkpoint and evaluate the model on the test data only.
 
