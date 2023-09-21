@@ -128,7 +128,7 @@ project_base_path
 
 ### Pre-trained models
 
-We provide the pre-trained models in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest). Ensure that the checkpoints match the following structure:
+We provide the pre-trained models in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest). Ensure that the weights match the following structure:
 
 <pre>
 project_base_path
@@ -137,10 +137,13 @@ project_base_path
       ...
   └─── <b>pretrained_models
       | hmc_text-inv-comb_best.ckpt
-      | harmeme_text-inv-comb_best.ckpt</b>
+      | harmeme_text-inv-comb_best.ckpt
       
   └─── pretrained_weights
-      ...
+      | hmc
+      | harmeme
+      | phi
+    </b>
   
 └─── src
   | combiner.py
