@@ -125,20 +125,17 @@ project_base_path
 
 ## Usage
 
-### Pre-trained models and weights
+### Pre-trained models
 
-We provide the pre-trained checkpoint of our best models in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest).
+We provide the pre-trained models in the [release](https://github.com/miccunifi/ISSUES/releases/tag/latest). Ensure that the checkpoints match the following structure:
 
-To use the checkpoints to reproduce our results, they must be placed in the following structure:
 <pre>
 project_base_path
 └─── resources
   └─── datasets
       ...
   └─── <b>pretrained_models
-      | hmc_combiner_best.ckpt
       | hmc_text-inv-comb_best.ckpt
-      | harmeme_combiner_best.ckpt
       | harmeme_text-inv-comb_best.ckpt</b>
       
   └─── pretrained_weights
@@ -153,11 +150,9 @@ project_base_path
 ...
 </pre>
 
-### Reproduce the results and run experiments
-For running the following scripts in a decent amount of time, it is **heavily** recommended to use a CUDA-capable GPU.
+### Training and Testing
+We provide scripts for training and testing our approach on the HMC and HarMeme datasets.
 
-We provide the scripts for replicating our proposed model both with and without the Textual Inversion Network.
-These scripts are crucial for running the code with the necessary parameters to replicate our model's outcomes on both datasets.
 <pre>
 project_base_path
 └─── resources
@@ -166,35 +161,30 @@ project_base_path
 └─── src
   ...
 
-<b>run.sh
-run_harmeme_combiner.sh
+<b>
 run_harmeme_text-inv-comb.sh
-run_hmc_combiner.sh
 run_hmc_text-inv-comb.sh
 </b>
 
 ...
 </pre>
 
-To run these files, navigate to the root folder and use the following commands:
+To use a script, navigate to the root folder and use the following commands:
 
 ```shell
 chmod +x <filename>.sh
 ./<filename>.sh
 ```
+where:
+- ```<filename> = run_harmeme_text-inv-comb``` is related to the HarMeme dataset
+- ```<filename> = run_hmc_text-inv-comb``` is related to the HMC dataset
 
-- ```<filename> = run_harmeme_combiner``` lets you run the model without the Text Inversion Network on the HarMeme dataset 
-- ```<filename> = run_harmeme_text-inv-comb``` lets you run our best model with the Iext Inversion Network on the HarMeme dataset
-- ```<filename> = run_hmc_combiner``` lets you run the model without the Text Inversion Network on the HMC dataset
-- ```<filename> = run_text-inv-comb``` lets you run the best model with the Text Inversion Network on the HMC dataset
+For <b>training</b> the model from scratch and then evaluating its performance, disable the ```--reproduce``` flag of the script.
 
-Disabling the ```--reproduce``` flag in one of the ```<filename>.sh``` files allows the training from scratch and evaluation of the model, whereas enabling it will use the
-specified pre-trained checkpoint and evaluate the model on the test data only.
-
-We recommend using the ```run.sh``` file to run experiments with different argument values.
+For <b>testing</b> the pre-trained models and reproducing our results, enable the ```--reproduce``` flag of the script.
 
 ## Arguments
-We describe the arguments of the scripts
+In the following, we describe each argument of the scripts.
 
 ### Experiments
 - ```dataset``` - dataset name: [**hmc** or **harmeme**]
