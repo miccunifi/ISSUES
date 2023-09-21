@@ -123,7 +123,8 @@ project_base_path
 
 </details>
 
-## Usage
+<details>
+<summary><h2>Usage</h2></summary>
 
 ### Pre-trained models
 
@@ -183,10 +184,10 @@ For <b>training</b> the model from scratch and then evaluating its performance, 
 
 For <b>testing</b> the pre-trained models and reproducing our results, enable the ```--reproduce``` flag of the script.
 
-## Arguments
+### Arguments
 In the following, we describe each argument of the scripts.
 
-### Experiments
+#### Experiments
 - ```dataset``` - dataset name: [**hmc** or **harmeme**]
 - ```num_mapping_layers``` - number of projection layers to map CLIP features in a task-oriented latent space
 - ```num_pre_output_layers``` - number of MLP hidden layers for performing the final classification
@@ -199,27 +200,27 @@ In the following, we describe each argument of the scripts.
 - ```pretrained_model``` - name of the checkpoint of the pretrained model in the 'pretrained_models' folder
 - ```reproduce``` - flag to indicate whether to perform the training process followed by the evaluation phase (False) or directly evaluate a pre-trained model on the test data (True)
 
-### General
+#### General
 - ```map_dim``` - output dimension of the projected feature vectors
 - ```fusion``` - fusion method between the textual and visual modalities (when applicable): [**concat** or **align**]
 - ```pretrained_proj_weights``` - flag to indicate whether to use pre-trained projection weights (when applicable)
 - ```freeze_proj_layers``` - flag to indicate whether to freeze the pre-trained weights
 
 
-### Combiner Architecture
+#### Combiner Architecture
 - ```comb_proj``` - flag to indicate whether to project the input features of the Combiner 
 - ```comb_fusion``` - fusion method to use to combine the input features of the Combiner
 - ```convex_tensor``` - flag to indicate whether to compute a tensor or a scalar as the output of the convex combination
 
-### Textual Inversion Architecture
+#### Textual Inversion Architecture
 - ```text_inv_proj``` - flag to indicate whether to use CLIP textual encoder projection 
 - ```phi_inv_proj``` - flag to indicate whether to project the output of phi network
 - ```post_inv_proj``` - flag to indicate whether to project the CLIP textual encoder output features
 - ```enh_text``` - flag to indicate whether to use a prompt with only the pseudo-word or concatenate the meme text
 - ```phi_freeze``` - flag to indicate whether to freeze the pre-trained phi network 
 
+</details>
 
----------------------------------------------------
 ## Authors
 
 * [**Giovanni Burbi**](https://github.com/GiovanniBurbi)
