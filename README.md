@@ -1,10 +1,10 @@
 # ISSUES (ICCVW 2023)
 
 ### Mapping Memes to Words for Multimodal Hateful Meme Classification
-
+[![Generic badge](https://img.shields.io/badge/Paper-Link-blue.svg)](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html)
 [![GitHub Stars](https://img.shields.io/github/stars/miccunifi/ISSUES?style=social)](https://github.com/miccunifi/ISSUES)
 
-This is the **official repository** of the paper "*Mapp**I**ng Meme**S** to Word**S** for M**U**ltimodal Hateful M**E**me Cla**S**sification*" (**ISSUES**).
+This is the **official repository** of the [paper](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html) "*Mapp**I**ng Meme**S** to Word**S** for M**U**ltimodal Hateful M**E**me Cla**S**sification*" (**ISSUES**).
 
 ## Overview
 
