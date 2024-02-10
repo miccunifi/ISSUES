@@ -5,6 +5,9 @@
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2310.08368)
 [![GitHub Stars](https://img.shields.io/github/stars/miccunifi/ISSUES?style=social)](https://github.com/miccunifi/ISSUES)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mapping-memes-to-words-for-multimodal-hateful/hateful-meme-classification-on-harmeme)](https://paperswithcode.com/sota/hateful-meme-classification-on-harmeme?p=mapping-memes-to-words-for-multimodal-hateful)\
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/mapping-memes-to-words-for-multimodal-hateful/meme-classification-on-hateful-memes)](https://paperswithcode.com/sota/meme-classification-on-hateful-memes?p=mapping-memes-to-words-for-multimodal-hateful)
+
 This is the **official repository** of the [paper](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html) "*Mapp**I**ng Meme**S** to Word**S** for M**U**ltimodal Hateful M**E**me Cla**S**sification*" (**ISSUES**).
 
 ## Overview
